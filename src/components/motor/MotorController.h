@@ -16,6 +16,7 @@ namespace Pinetime {
       void Pulse(uint32_t interval, uint8_t repetitions);
       void StartRinging();
       void StopRinging();
+      bool IsRinging();
 
     private:
       static void Ring(TimerHandle_t xTimer);
